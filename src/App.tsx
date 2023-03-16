@@ -30,14 +30,18 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
+import { SplashScreen } from '@capacitor/splash-screen';
 
 /* Theme variables */
 import './theme/variables.css';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
+const App: React.FC = () => {
+  SplashScreen.hide()
+
+  return (
+    <IonApp>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
@@ -71,6 +75,7 @@ const App: React.FC = () => (
       </IonTabs>
     </IonReactRouter>
   </IonApp>
-);
+  )
+}
 
 export default App;
