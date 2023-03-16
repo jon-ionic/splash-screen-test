@@ -1,0 +1,8 @@
+{
+  "name": "splash-screen-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "2572df6a"
+}
