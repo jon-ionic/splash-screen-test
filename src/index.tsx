@@ -3,11 +3,11 @@ import { createRoot } from 'react-dom/client';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import { SplashScreen } from '@capacitor/splash-screen';
+// import { SplashScreen } from '@capacitor/splash-screen';
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
-SplashScreen.hide()
+// SplashScreen.hide()
 root.render(
   <React.StrictMode>
     <App />
